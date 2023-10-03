@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-hook-form": "^7.46.2",
+    "socket.io": "^4.7.2"
+  }
+}

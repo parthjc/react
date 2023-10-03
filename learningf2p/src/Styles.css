@@ -1,0 +1,25 @@
+.header{
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding: 0.02px;
+    margin: 0;
+    
+}
+.content{
+    background-color: #f2f2f2;
+    color: rgb(160, 19, 19);
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+    padding: 120px;
+}
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 0.02px;
+    margin: 0;
+}
