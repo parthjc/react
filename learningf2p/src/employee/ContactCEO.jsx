@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ContactCEO() {
+export const ContactCEO = () => {
   return (
     <div>
       <h1>ContactCEO</h1>

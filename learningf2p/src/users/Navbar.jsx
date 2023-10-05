@@ -32,8 +32,21 @@ export const Navbar = () => {
                 CONTACT EMP
               </Link>
             </li>
-          
-            
+            <li className="nav-item">
+              <Link className="nav-link" to="/apidemo1">
+                Apidemo1
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/apidemo2">
+                Apidemo2
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/apidemo3">
+                Apidemo3
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

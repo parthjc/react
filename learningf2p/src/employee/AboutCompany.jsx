@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 
-export default function AboutCompany() {
+export const AboutCompany = () => {
   const id = useParams().id
   return (
     <div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ContactManager() {
+export const ContactManager = () => {
   return (
     <div>
       <h1>ContactManager</h1>
