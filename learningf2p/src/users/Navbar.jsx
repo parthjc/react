@@ -47,6 +47,21 @@ export const Navbar = () => {
                 Apidemo3
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/apidemopost">
+                ApidemoPost
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/apiadduser">
+                ApiAddUser
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/apitokendemo">
+                ApiTokenDemo
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

@@ -11,6 +11,9 @@ import {ContactEmployee} from "./employee/ContactEmployee";
 import {ContactManager} from "./employee/ContactManager";
 import {EmployeeList} from "./employee/EmployeeList";
 import { Navbar } from "./users/Navbar";
+import { ApiDemoPost } from "./api/ApiDemoPost";
+import { AddApiUser } from "./api/AddApiUser";
+import { ApiTokenDemo } from "./api/ApiTokenDemo";
 // import {EmployeeAdd} from './users/EmployeeAdd';
 // import { StudentAdd } from './users/StudentAdd';
 // import { UsersAdd } from './users/UsersAdd';
@@ -33,6 +36,9 @@ function App() {
         <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
         <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
         <Route path="/apidemo3" element={<ApiDemo3 />}></Route>
+        <Route path="/apidemopost" element={<ApiDemoPost />}></Route>
+        <Route path="/apiadduser" element={<AddApiUser />}></Route>
+        <Route path="/apitokendemo" element={<ApiTokenDemo />}></Route>
       </Routes>
     </>
   );
