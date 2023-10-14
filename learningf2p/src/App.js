@@ -1,19 +1,21 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import {ApiDemo1} from "./api/ApiDemo1";
-import {ApiDemo2} from "./api/ApiDemo2";
-import {ApiDemo3} from "./api/ApiDemo3";
-import {AboutCompany} from "./employee/AboutCompany";
-import {AboutEmployee} from "./employee/AboutEmployee";
-import {ContactCEO} from "./employee/ContactCEO";
-import {ContactDevelopers} from "./employee/ContactDevelopers";
-import {ContactEmployee} from "./employee/ContactEmployee";
-import {ContactManager} from "./employee/ContactManager";
-import {EmployeeList} from "./employee/EmployeeList";
+import { ApiDemo1 } from "./api/ApiDemo1";
+import { ApiDemo2 } from "./api/ApiDemo2";
+import { ApiDemo3 } from "./api/ApiDemo3";
+import { AboutCompany } from "./employee/AboutCompany";
+import { AboutEmployee } from "./employee/AboutEmployee";
+import { ContactCEO } from "./employee/ContactCEO";
+import { ContactDevelopers } from "./employee/ContactDevelopers";
+import { ContactEmployee } from "./employee/ContactEmployee";
+import { ContactManager } from "./employee/ContactManager";
+import { EmployeeList } from "./employee/EmployeeList";
 import { Navbar } from "./users/Navbar";
 import { ApiDemoPost } from "./api/ApiDemoPost";
 import { AddApiUser } from "./api/AddApiUser";
 import { ApiTokenDemo } from "./api/ApiTokenDemo";
+import { WeatherApp } from "./api/WeatherApp";
+import { Count } from "./users/Count";
 // import {EmployeeAdd} from './users/EmployeeAdd';
 // import { StudentAdd } from './users/StudentAdd';
 // import { UsersAdd } from './users/UsersAdd';
@@ -39,6 +41,8 @@ function App() {
         <Route path="/apidemopost" element={<ApiDemoPost />}></Route>
         <Route path="/apiadduser" element={<AddApiUser />}></Route>
         <Route path="/apitokendemo" element={<ApiTokenDemo />}></Route>
+        <Route path="/weatherapp" element={<WeatherApp />}></Route>
+        <Route path="/count" element={<Count />}></Route>
       </Routes>
     </>
   );

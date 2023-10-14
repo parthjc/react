@@ -62,6 +62,16 @@ export const Navbar = () => {
                 ApiTokenDemo
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/count">
+                Count
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/weatherapp">
+                WeatherApp
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

@@ -1,25 +1,34 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const ApiDemo2 = () => {
   const [users, setUsers] = useState([]);
+  const [loader, setloader] = useState(true);
 
   const getUserData = async () => {
     try {
       const res = await axios.get("https://node5.onrender.com/user/user");
+      setloader(true);
+      // console.log(loader);
       console.log(res);
       console.log(res.status);
       console.log(res.data.data);
       setUsers(res.data.data);
+      setloader(false);
     } catch (error) {
       console.error("Error fetching data:", error);
       // Handle the error, e.g., display an error message to the user
     }
   };
 
+  useEffect(() => {
+    getUserData();
+  }, []);
+
   return (
     <div>
-      <button onClick={() => getUserData()}>Get User Data</button>
+      {loader === true ? <h1>Loading..</h1> : null}
+      {/* <button onClick={() => getUserData()}>Get User Data</button> */}
       <table border="1" className="table table-dark">
         <thead>
           <tr>
