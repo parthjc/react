@@ -16,6 +16,8 @@ import { AddApiUser } from "./api/AddApiUser";
 import { ApiTokenDemo } from "./api/ApiTokenDemo";
 import { WeatherApp } from "./api/WeatherApp";
 import { Count } from "./users/Count";
+import { UserDetail } from "./api/UserDetail";
+import { UserEdit } from "./api/UserEdit";
 // import {EmployeeAdd} from './users/EmployeeAdd';
 // import { StudentAdd } from './users/StudentAdd';
 // import { UsersAdd } from './users/UsersAdd';
@@ -43,6 +45,8 @@ function App() {
         <Route path="/apitokendemo" element={<ApiTokenDemo />}></Route>
         <Route path="/weatherapp" element={<WeatherApp />}></Route>
         <Route path="/count" element={<Count />}></Route>
+        <Route path="/user/detail/:id" element={<UserDetail />}></Route>
+        <Route path="/user/edit/:id" element={<UserEdit />}></Route>
       </Routes>
     </>
   );
