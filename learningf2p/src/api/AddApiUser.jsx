@@ -72,7 +72,8 @@ export const AddApiUser = () => {
         theme="dark"
       />
       <form onSubmit={handleSubmit(submitHandler)}>
-        <div>
+        <table>
+ <div>
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -121,6 +122,8 @@ export const AddApiUser = () => {
         <div>
           <input type="submit" value="Add User" />
         </div>
+        </table>
+       
       </form>
     </div>
   );
