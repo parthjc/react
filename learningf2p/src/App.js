@@ -23,6 +23,7 @@ import { Products } from "./product/Products";
 import { ProductCart } from "./product/ProductCart";
 import { useState } from "react";
 import { ProductContext } from "./product/ProductContext";
+import { LoginUser } from "./users/LoginUser";
 
 // import {EmployeeAdd} from './users/EmployeeAdd';
 // import { StudentAdd } from './users/StudentAdd';
@@ -62,6 +63,7 @@ function App() {
           <Route path="/students" element={<Students />}></Route>
           <Route path="/products" element={<Products />}></Route>
           <Route path="/cart" element={<ProductCart />}></Route>
+          <Route path="/login" element={<LoginUser />}></Route>
         </Routes>
       </ProductContext.Provider>
 
